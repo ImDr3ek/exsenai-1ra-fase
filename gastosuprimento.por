@@ -1,8 +1,6 @@
 programa {
   funcao inicio() {
-    real suprimento
-    real faturamentoReais
-    real faturamentoItems
+    real suprimento, faturamentoReais, faturamentoItems
     escreva("Gasto em Suprimento e Mercadoria: ")
     leia(suprimento)
     escreva("Faturamento dos Ingresos: ")
