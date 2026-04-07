@@ -4,7 +4,7 @@ programa {
     real pesoxgramas
     escreva("Peso em gramas: ")
     leia(pesoxgramas)
-    real precoxracaoemkilo = (pesoxgramas / 100) * recaogranel
+    real precoxracaoemkilo = (pesoxgramas / 1000) * recaogranel
     escreva("Preço da Raçao por Kilo: R$"+precoxracaoemkilo)
   }
 }
