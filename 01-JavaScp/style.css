@@ -4,8 +4,16 @@ nav .btns{
 }
 
 button{
-background-color: rgb(250, 234, 212);
+background-color: rgb(238, 237, 180);
 color: darkslategray;
+margin: 0 5px;
+border-style: initial;
+}
+
+button:hover{
+    border-style: groove;
+    background-color: rgb(243, 217, 133);
+    scale: 1.05;
 }
 
 h1{
