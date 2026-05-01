@@ -1,0 +1,17 @@
+nav .btns{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+button{
+background-color: rgb(250, 234, 212);
+color: darkslategray;
+}
+
+h1{
+    text-align: center;
+}
+body{
+background-color: rgb(245, 234, 189);
+}
+
