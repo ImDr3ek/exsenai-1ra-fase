@@ -143,9 +143,65 @@ function surumantres(){
         }
     }
 
-    function dennyss(){
+    function idadecachorro(){
+        let idadedocachorro
+        idadedocachorro =Number(prompt("Qual Idade do cachorro?"))
+        let idadeTotal =Number(idadedocachorro * 7)
+        if(idadeTotal >= 70){
+         document.getElementById("resultado").innerHTML ="Seu cachorro pode se aposentar"
+        }else {
+            document.getElementById("resultado").innerHTML ="ta de boa"
+            
+        }
         
     }
+
+    function desicaoCompra(){
+        let preco, saldo
+        preco= Number(prompt("Qual é o preco do Item?"))
+        saldo= Number(prompt("Qual é seu saldo atual?"))
+        if(saldo < preco){
+            document.getElementById("resultado").innerHTML= "voce ta pobre, pega clt"
+        }else if(saldo>preco){
+            document.getElementById("resultado").innerHTML= "pode comprar"
+        }
+
+    }
+    function verificarIdade(){
+        let idade
+        idade =Number(prompt("Qual sua idade"))
+        if(idade>=16){
+            resultado.innerHTML = "Pode Votar"
+        }else{
+            resultado.innerHTML = "come verdura e cresce"
+        }
+    }
+    function calcularIMC(){
+
+        let peso, altura, imc
+
+        peso =Number(prompt("Qual seu peso"))
+        altura =Number(prompt("Qual sua altura"))
+        imc =Number(peso/altura^2)
+        if(imc < 25){
+            resultado.innerHTML = "Seu IMC ta baixo dsgc " + imc
+        }else{
+            resultado.innerHTML = "Ta de boa " + imc
+        }
+    }
+    function convertirTemperatura(){
+        let temperatura, farengeis
+        temperatura= Number(prompt("Temperatura em celcius"))
+        farengeis = Number(temperatura * (9/5) + 32)
+        if(farengeis > 68){
+            resultado.innerHTML = "!ALERTA TEMPERATU CRLH"
+        }else{
+            resultado.innerHTML = "Ta de boa"
+        }
+ 
+    }
+
+
 
 
 
