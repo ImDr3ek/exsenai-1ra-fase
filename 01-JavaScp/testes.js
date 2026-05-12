@@ -201,7 +201,33 @@ function surumantres(){
  
     }
 
+function calcularVelocidad(){
+    let distancia, tempoDeViagem, velocidadedaLuz,tempoSegundos, tempoMinutos, tempoHoras, tempoDias, tempoMeses, tempoAnos
+    velocidadedaLuz =Number(300000)
+    distancia = Number(prompt("Coloque a distanca"))
+    tempoSegundos= distancia / velocidadedaLuz
+   resultado.innerHTML = "Voce vai viajar por " + tempoSegundos + " segundos"
+   if(tempoSegundos>60){
+    tempoMinutos = tempoSegundos / 60
+    resultado.innerHTML += "<br>Ou " + tempoMinutos + " Minutos"
+}if(tempoMinutos>60){
+    tempoHoras = tempoMinutos / 60
+    resultado.innerHTML += "<br>Ou " + tempoHoras + " horas"
+}if(tempoHoras>24){
+    tempoDias = tempoHoras/ 24
+    resultado.innerHTML += "<br>Ou " + tempoDias + " Dias"
+}if(tempoDias>30){
+    tempoMeses = tempoDias / 30
+    resultado.innerHTML += "<br>Ou " + tempoMeses + " meses"
+}if(tempoMeses>12){
+    tempoAnos = tempoMeses / 12
+    resultado.innerHTML += "<br>Ou " + tempoAnos + " anos"
+   }
 
+}
+function receberSalario(){
+    
+}
 
 
 
