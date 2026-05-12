@@ -226,8 +226,29 @@ function calcularVelocidad(){
 
 }
 function receberSalario(){
-    
-}
+     let salario, emprestimo, prestacoes, trintaPorcento, valorDasPrestacoes
+
+        salario = Number(prompt("Qual seu salário?"))
+        emprestimo = Number(prompt("Qual foi o valor do emprestimo?"))
+        prestacoes = Number(prompt("São quantas prestações?"))
+
+        trintaPorcento = salario * 0.30
+        valorDasPrestacoes = emprestimo / prestacoes
+        if(salario != 0 && emprestimo != 0 && prestacoes != 0){
+
+            if(trintaPorcento < valorDasPrestacoes){
+                resultado.innerHTML = "O valor do emprestimo ultrapassou 30% do seu salário: valor das prestações R$:" 
+                + valorDasPrestacoes + " valor dos 30% do salário: R$" + trintaPorcento
+            }
+            else{
+                resultado.innerHTML = "Valor das prestações: R$" + valorDasPrestacoes
+            }
+        }
+        else{
+            resultado.innerHTML = "Tente novamente"
+        }
+    }
+
 
 
 
